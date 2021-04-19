@@ -48,14 +48,23 @@ namespace producer
             TimeSpan tspan=new TimeSpan(20);
             Task<List<ProduceResponse>> x = client.SendMessageAsync(topic, events, 1, tspan);//.Wait(2000);
             //當服務端連接不上時，停留在此位置，服務端開啟時，自動循環執行；
-            var a = x.Result;
-            foreach (ProduceResponse p in x.Result)
+            try
             {
-                long re = p.Offset;
-                Console.WriteLine("寫入offset{0}", re);
+                var a = x.Result;
+                foreach (ProduceResponse p in x.Result)
+                {
+                    long re = p.Offset;
+                    Console.WriteLine("Write success,offset{0}", re);
+                }
+                x.Wait(2000);
+                Console.WriteLine("Produced: Key: {0}. Message: {1}", key, events[0].Value.ToUtf8String());
             }
-            x.Wait(2000);
-            Console.WriteLine("Produced: Key: {0}. Message: {1}", key, events[0].Value.ToUtf8String());
+            catch (Exception)
+            {
+                
+                
+            }
+            
             
             using (client) { }
         }

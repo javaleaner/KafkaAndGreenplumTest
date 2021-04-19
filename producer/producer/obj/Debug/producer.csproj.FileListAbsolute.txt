@@ -12,3 +12,9 @@ D:\我的文件\Visual Studio 2010\Projects\kafka-for-net-master\kafka-for-net-m
 D:\我的文件\Visual Studio 2010\Projects\kafka-for-net-master\kafka-for-net-master\producer\producer\bin\Debug\producer.exe
 D:\我的文件\Visual Studio 2010\Projects\kafka-for-net-master\kafka-for-net-master\producer\producer\bin\Debug\producer.pdb
 D:\我的文件\Visual Studio 2010\Projects\kafka-for-net-master\kafka-for-net-master\producer\producer\obj\Debug\producer.csprojResolveAssemblyReference.cache
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\producer\producer\bin\Debug\producer.exe.config
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\producer\producer\bin\Debug\producer.exe
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\producer\producer\bin\Debug\producer.pdb
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\producer\producer\obj\Debug\producer.csprojResolveAssemblyReference.cache
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\producer\producer\obj\Debug\producer.exe
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\producer\producer\obj\Debug\producer.pdb
