@@ -1,0 +1,10 @@
+D:\我的文件\Visual Studio 2010\Projects\kafka-net-master\kafka-net-master\src\kafka-net\bin\Debug\kafka-net.dll
+D:\我的文件\Visual Studio 2010\Projects\kafka-net-master\kafka-net-master\src\kafka-net\bin\Debug\kafka-net.pdb
+D:\我的文件\Visual Studio 2010\Projects\kafka-net-master\kafka-net-master\src\kafka-net\obj\Debug\kafka-net.dll
+D:\我的文件\Visual Studio 2010\Projects\kafka-net-master\kafka-net-master\src\kafka-net\obj\Debug\kafka-net.pdb
+D:\我的文件\Visual Studio 2010\Projects\kafka-net-master\kafka-net-master\src\kafka-net\obj\Debug\kafka-net.csprojResolveAssemblyReference.cache
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\kafka-net\bin\Debug\kafka-net.dll
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\kafka-net\bin\Debug\kafka-net.pdb
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\kafka-net\obj\Debug\kafka-net.csprojResolveAssemblyReference.cache
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\kafka-net\obj\Debug\kafka-net.dll
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\kafka-net\obj\Debug\kafka-net.pdb
