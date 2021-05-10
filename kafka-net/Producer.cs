@@ -239,7 +239,8 @@ namespace KafkaNet
                 var messageByRouter = ackLevelBatch.Select(batch => new
                 {
                     TopicMessage = batch,
-                    Route = BrokerRouter.SelectBrokerRoute(batch.Topic, batch.Message.Key),
+                    //Route = BrokerRouter.SelectBrokerRoute(batch.Topic, batch.Message.Key),//根据KEY值写partition
+                    Route = BrokerRouter.SelectBrokerRoute(batch.Topic, batch.Message.Meta.PartitionId),//根据partitionId写消息
                 })
                                          .GroupBy(x => new { x.Route, x.TopicMessage.Topic, x.TopicMessage.Codec });
 

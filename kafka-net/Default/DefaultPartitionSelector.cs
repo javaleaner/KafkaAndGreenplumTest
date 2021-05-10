@@ -2,10 +2,9 @@
 using System.Collections.Concurrent;
 using System.Linq;
 using KafkaNet.Common;
-using KafkaNet.Model;
 using KafkaNet.Protocol;
 
-namespace KafkaNet
+namespace KafkaNet.Default
 {
     public class DefaultPartitionSelector : IPartitionSelector
     {

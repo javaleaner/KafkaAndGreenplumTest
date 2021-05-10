@@ -20,3 +20,4 @@ D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\comsumer\comsu
 D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\comsumer\comsumer\bin\Debug\comsumer.pdb
 D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\comsumer\comsumer\bin\Debug\kafka-net.pdb
 D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\comsumer\comsumer\obj\Debug\comsumer.csprojResolveAssemblyReference.cache
+D:\我的文件\Visual Studio 2010\Projects\KafkaAndGreenplumTest\comsumer\comsumer\bin\Debug\kafka-net.dll

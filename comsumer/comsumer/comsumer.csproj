@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="kafka-net">
-      <HintPath>..\..\..\..\zabbix\kafka\csharp\kafka-net\src\kafka-net\bin\Release\kafka-net.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -54,6 +51,12 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\kafka-net\kafka-net.csproj">
+      <Project>{1343eb68-55cb-4452-8386-24a9989de1c0}</Project>
+      <Name>kafka-net</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

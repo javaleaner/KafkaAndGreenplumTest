@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KafkaNet.BrokerRouter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgAABACAAAAAAAEAYABgEABQAACAAAAAAAABIBAA=</HashCode>
+      <FileName>BrokerRouter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.TopicSearchResult" Collapsed="true">
+    <Position X="16.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>BrokerRouter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Consumer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAhAIASAECIAAAAAACAAEQIBAAAAAAAxAAAKAABA=</HashCode>
+      <FileName>Consumer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.ConsoleLog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAgAAQAAAAACAAAAQA=</HashCode>
+      <FileName>Default\ConsoleLog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.DefaultKafkaConnectionFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAA=</HashCode>
+      <FileName>Default\DefaultKafkaConnectionFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.DefaultPartitionSelector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAQAAAAAA=</HashCode>
+      <FileName>Default\DefaultPartitionSelector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.DefaultTraceLog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAgAAQAAAAACAAAAQA=</HashCode>
+      <FileName>Default\DefaultTraceLog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.KafkaConnection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJAAAAAICAAAGABiEAAAAAAQAFAAICgAAAAAQAAAAI=</HashCode>
+      <FileName>KafkaConnection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.KafkaMetadataProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAABCQAAEBAAAAAAAAAIAIAAAAABAAACAAAAAA=</HashCode>
+      <FileName>KafkaMetadataProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.MetadataValidationResult" Collapsed="true">
+    <Position X="28.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAgAAAAAAABAIAAAAAA=</HashCode>
+      <FileName>KafkaMetadataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.KafkaTcpSocket" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgACgBECAAAEAAAGAAAAAgSARIMARCAwAAAwAACAQ=</HashCode>
+      <FileName>KafkaTcpSocket.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.SocketPayloadReadTask" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAgAAAAAAAAAAAAAACQgA=</HashCode>
+      <FileName>KafkaTcpSocket.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.SocketPayloadSendTask" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAQgA=</HashCode>
+      <FileName>KafkaTcpSocket.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.KafkaDataPayload" Collapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQQA=</HashCode>
+      <FileName>KafkaTcpSocket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.MetadataQueries" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAACAAAAAAAAAAAAEAAAACAAAA=</HashCode>
+      <FileName>MetadataQueries.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.BrokerRoute" Collapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEEgAAAAAAAAAAAAIAAAAAAACAAAIA=</HashCode>
+      <FileName>Model\BrokerRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Producer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CYACAAAABiJgAAAAAAgACIQCAECEAAAAJAEAAACAQBQ=</HashCode>
+      <FileName>Producer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.TopicMessage" Collapsed="true">
+    <Position X="30.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAIAAAgAICAAAgA=</HashCode>
+      <FileName>Producer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.BrokerRouteSendBatch" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Producer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Common.AsyncCollection&lt;T&gt;" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAIAQABAAAAAAAAwEAAAAAQAAQCAABAAAACAAQBEAAA=</HashCode>
+      <FileName>Common\AsyncCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Common.AsyncLock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAACAAAACAAAAABAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\AsyncLock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.Common.AsyncManualResetEvent" Collapsed="true">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAEIAAAAAQAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Common\AsyncManualResetEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Common.BigEndianBinaryReader" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAYCEAAAAEAgAAAAgQDAAAACAAAGgGQREEACACA=</HashCode>
+      <FileName>Common\BigEndianBinaryReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Common.BigEndianBinaryWriter" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAEAAAA=</HashCode>
+      <FileName>Common\BigEndianBinaryWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Common.ConcurrentCircularBuffer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAABAAAAAAAAQAAAAAAAQEAgCAAAABACA=</HashCode>
+      <FileName>Common\ConcurrentCircularBuffer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.Common.Crc32Provider" Collapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAABBAAEAAAAAAACAAAAAAAAAAAAAAAAACgAAAAA=</HashCode>
+      <FileName>Common\Crc32Provider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Common.Extensions" Collapsed="true">
+    <Position X="21.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIACAAAAAAABAAAQIAAAIAACAAAAAAAEAIAAAAgQ=</HashCode>
+      <FileName>Common\Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Common.KafkaMessagePacker" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAQAAAAQAAAAAAAAAAAIAAAACAAAABA=</HashCode>
+      <FileName>Common\KafkaMessagePacker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.Common.ScheduledTimer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAEACAkAIAAAAiBAEAACAAAEAAAEQAAgQAICIA=</HashCode>
+      <FileName>Common\ScheduledTimer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="KafkaNet.Model.ConsumerOptions" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAQAAIAACEAAAAAAQAkAAECAAAAAACAAQEA=</HashCode>
+      <FileName>Model\ConsumerOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Model.KafkaEndpoint" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgEAAAAAAAAAAAIAAAAAAAAAABAA=</HashCode>
+      <FileName>Model\KafkaEndpoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Model.KafkaOptions" Collapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAABIAAAAAAEAAACAQAAAAAAgAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Model\KafkaOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.BaseRequest" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAACAAIQAgAAAAAAAAAAAAAACAAAAAAAAEAQ=</HashCode>
+      <FileName>Protocol\BaseRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.Broker" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAACAAACAACAABAAAAAAAA=</HashCode>
+      <FileName>Protocol\Broker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.ConsumerMetadataRequest">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAgABAAAAAAAAwAAAAQAAAAAA=</HashCode>
+      <FileName>Protocol\ConsumerMetadataRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KafkaNet.Protocol.ConsumerMetadataResponse" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAQAAAAAAAAAAIAAAAAAEAAAA=</HashCode>
+      <FileName>Protocol\ConsumerMetadataRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.FetchRequest">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAQCJABAAAAAAAgAAAAAgAAAAAAAAAQAABCAA=</HashCode>
+      <FileName>Protocol\FetchRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KafkaNet.Protocol.Fetch" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAACAAgIA=</HashCode>
+      <FileName>Protocol\FetchRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.FetchResponse" Collapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAASBAAIA=</HashCode>
+      <FileName>Protocol\FetchRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.Payload" Collapsed="true">
+    <Position X="21.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAASAAAAA=</HashCode>
+      <FileName>Protocol\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.Message" Collapsed="true">
+    <Position X="21.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAIAAADAAQAAAAABAAAgEAAAIAAAAAgAAAAIAA=</HashCode>
+      <FileName>Protocol\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.MessageMetadata" Collapsed="true">
+    <Position X="23.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIA=</HashCode>
+      <FileName>Protocol\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.MetadataRequest">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAABAAAAAAAAAgAAAAAAAAAAAAAEAQCAAAAA=</HashCode>
+      <FileName>Protocol\MetadataRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KafkaNet.Protocol.MetadataResponse" Collapsed="true">
+    <Position X="27" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAgAAAACAAAAA=</HashCode>
+      <FileName>Protocol\MetadataRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.OffsetCommitRequest">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAgAABAAAAAAAAAgAEAAAAAAAAQAAAAQAAAAAA=</HashCode>
+      <FileName>Protocol\OffsetCommitRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KafkaNet.Protocol.OffsetCommit" Collapsed="true">
+    <Position X="23.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAEgIA=</HashCode>
+      <FileName>Protocol\OffsetCommitRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.OffsetCommitResponse" Collapsed="true">
+    <Position X="25.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAACAAAIA=</HashCode>
+      <FileName>Protocol\OffsetCommitRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.OffsetFetchRequest">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAgAAAAAAAAAAQAAAAQCAIAAg=</HashCode>
+      <FileName>Protocol\OffsetFetchRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KafkaNet.Protocol.OffsetFetch" Collapsed="true">
+    <Position X="27" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAIA=</HashCode>
+      <FileName>Protocol\OffsetFetchRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.OffsetFetchResponse" Collapsed="true">
+    <Position X="28.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAEAAAAAAAAAAAAAEAAAAAAACAAgIA=</HashCode>
+      <FileName>Protocol\OffsetFetchRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.OffsetRequest">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIABAAAAAAAAAgAAAAAAAAQAAAAAAQBAAAAA=</HashCode>
+      <FileName>Protocol\OffsetRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KafkaNet.Protocol.Offset" Collapsed="true">
+    <Position X="21.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAACAAAYA=</HashCode>
+      <FileName>Protocol\OffsetRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.OffsetResponse" Collapsed="true">
+    <Position X="18.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAACAAAIA=</HashCode>
+      <FileName>Protocol\OffsetRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.OffsetPosition" Collapsed="true">
+    <Position X="16.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAAAIAAAAAAAAAAgIA=</HashCode>
+      <FileName>Protocol\OffsetRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.ProduceRequest">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAARAAIAAAAAQgAAAAAAAAAAAAAgAUAAAAAA=</HashCode>
+      <FileName>Protocol\ProduceRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KafkaNet.Protocol.CompressedMessageResult" Collapsed="true">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\ProduceRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.ProduceResponse" Collapsed="true">
+    <Position X="28.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAgAAAAAAAAAAAAIAAAAAAACAAgIA=</HashCode>
+      <FileName>Protocol\ProduceRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.Compression" Collapsed="true">
+    <Position X="20" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.FailCrcCheckException" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.ResponseTimeoutException" Collapsed="true">
+    <Position X="30.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.InvalidPartitionException" Collapsed="true">
+    <Position X="16.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.ServerDisconnectedException" Collapsed="true">
+    <Position X="18.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.ServerUnreachableException" Collapsed="true">
+    <Position X="20" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.InvalidTopicMetadataException" Collapsed="true">
+    <Position X="18.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.LeaderNotFoundException" Collapsed="true">
+    <Position X="18.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.UnresolvedHostnameException" Collapsed="true">
+    <Position X="18.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.InvalidMetadataException" Collapsed="true">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.OffsetOutOfRangeException" Collapsed="true">
+    <Position X="30.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.BufferUnderRunException" Collapsed="true">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.KafkaApplicationException" Collapsed="true">
+    <Position X="20" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.Topic" Collapsed="true">
+    <Position X="28.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAQAAAgAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Protocol\Topic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Protocol.Partition" Collapsed="true">
+    <Position X="20" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAIAAAAAAgAAIAAAABAEAAAAIA=</HashCode>
+      <FileName>Protocol\Topic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Statistics.StatisticsTracker" Collapsed="true">
+    <Position X="27" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAgAAAAAAAAIACQAAAAIAAAEAAAAAACAAgAAE=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Statistics.StatisticsSummary" Collapsed="true">
+    <Position X="25.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAQAAAAAEAAEAEAAAAAAAAAAA=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Statistics.Gauges" Collapsed="true">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAggAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Statistics.NetworkWriteStatistic" Collapsed="true">
+    <Position X="18.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAEBSAAAAAAAAABAAIAABAAAAAIA=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Statistics.NetworkWriteSummary" Collapsed="true">
+    <Position X="20" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEABAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Statistics.NetworkQueueSummary" Collapsed="true">
+    <Position X="30.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAACAABAAAAAAAAAAAAAQAAAAAAARAAAAA=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Statistics.NetworkTcpSummary" Collapsed="true">
+    <Position X="16.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAQAAAAACAAAAAQAAAAAACAEAEAAIAA=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Statistics.ProduceRequestSummary" Collapsed="true">
+    <Position X="27" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAACAABAAAACAAAAAAAAAAAAAAAAAJACiAAAAAABAA=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Statistics.ProduceRequestStatistic" Collapsed="true">
+    <Position X="25.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAEAAAAAAAAAgAAAAgAACAAAAAAE=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KafkaNet.Statistics.MathHelper" Collapsed="true">
+    <Position X="20" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAA=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="KafkaNet.Protocol.ProtocolConstants" Collapsed="true">
+    <Position X="16.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="KafkaNet.IBrokerRouter" Collapsed="true">
+    <Position X="16.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAABAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Interfaces\IBrokerRouter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KafkaNet.IKafkaConnection" Collapsed="true">
+    <Position X="18.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Interfaces\IKafkaConnection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KafkaNet.IKafkaConnectionFactory" Collapsed="true">
+    <Position X="20" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IKafkaConnectionFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KafkaNet.IKafkaLog" Collapsed="true">
+    <Position X="21.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAgAAQAAAAACAAAAQA=</HashCode>
+      <FileName>Interfaces\IKafkaLog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KafkaNet.IKafkaRequest&lt;T&gt;" Collapsed="true">
+    <Position X="23.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAADAAIAAgAAAgAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Interfaces\IKafkaRequest.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KafkaNet.IKafkaTcpSocket" Collapsed="true">
+    <Position X="25.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IKafkaTcpSocket.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KafkaNet.IMetadataQueries" Collapsed="true">
+    <Position X="27" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Interfaces\IMetadataQueries.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KafkaNet.IPartitionSelector" Collapsed="true">
+    <Position X="28.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Interfaces\IPartitionSelector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KafkaNet.Common.IScheduledTimer" Collapsed="true">
+    <Position X="30.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAEAAAAAIAAAACAAAAACAAAEAAAEAAAAQAAAAA=</HashCode>
+      <FileName>Common\ScheduledTimer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="KafkaNet.ValidationResult" Collapsed="true">
+    <Position X="27" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQBAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>KafkaMetadataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="KafkaNet.Common.StringPrefixEncoding" Collapsed="true">
+    <Position X="25.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAEAAAA=</HashCode>
+      <FileName>Common\BigEndianBinaryWriter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="KafkaNet.Common.ScheduledTimerStatus" Collapsed="true">
+    <Position X="21.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Common\ScheduledTimer.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="KafkaNet.Protocol.ApiKeyRequestType" Collapsed="true">
+    <Position X="16.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAAAAAAAAAAAAAAAAGAAAAAgAAAAEAAAAAAAAAAgAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="KafkaNet.Protocol.ErrorResponseCode" Collapsed="true">
+    <Position X="18.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAIAAACAAAAAEYABAAICEAICAAMIQAAAAABA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="KafkaNet.Protocol.MessageCodec" Collapsed="true">
+    <Position X="20" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAACAAAEAAAAAAA=</HashCode>
+      <FileName>Protocol\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="KafkaNet.Statistics.StatisticGauge" Collapsed="true">
+    <Position X="23.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAggAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Statistics\StatisticsTracker.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -24,7 +24,7 @@ namespace comsumer
            OffsetKafka= GetOffset();
             SetConsoleCtrlHandler(cancelHandler, true);
             Consume(getKafkaBroker(), getTopicName());
-            
+            //Consume(getKafkaBroker(), "testMulitiPartition");
         }
 
         private static  long GetOffset()
@@ -39,10 +39,23 @@ namespace comsumer
             offset = Convert.ToInt64(IniFileWr.IniFileGetVal("./config.ini", "topic", "test"));
             return offset;
         }
+        private static int GetPartitionId()
+        {
+            int partitionId = 0;
+            //IniFileWr.IniFileSetVal("./config.ini","topic","test","0");
+            string a = IniFileWr.IniFileGetVal("./config.ini", "topic", "partitionId");
+            if (a == "")
+            {
+                partitionId = 0;
+            }
+            partitionId = Convert.ToInt32(IniFileWr.IniFileGetVal("./config.ini", "topic", "partitionId"));
+            Console.WriteLine(" PartitionID:{0}", partitionId);
+            return partitionId;
+        }
         private static void Consume(string broker, string topic)
         {
             string[] temp = broker.Split(',');
-            Uri[] url =new Uri[3];
+            Uri[] url =new Uri[1];
             int index = 0;
             foreach(string item in temp)
             {
@@ -51,15 +64,16 @@ namespace comsumer
             }
             var options = new KafkaOptions(url);
             var router = new BrokerRouter(options);
-            OffsetPosition[] off =new OffsetPosition[3];
+            OffsetPosition[] off =new OffsetPosition[1];
             //off
-            off[0] = new OffsetPosition(64092, 30);
-            off[1] = new OffsetPosition(1, 9999);
-            off[2] = new OffsetPosition(2, 9999);
+            int partionId = GetPartitionId();
+            off[0] = new OffsetPosition(partionId, 9999);
+            //off[1] = new OffsetPosition(1, 0);
+            //off[2] = new OffsetPosition(2, 0);
             Consumer consumer = new Consumer(new ConsumerOptions(topic, router),off);
             //var tt2 = consumer.GetTopicOffsetAsync(topic, 2, -1);
             ////var tt = consumer.GetOffsetPosition();
-            //var test = CreateOffsetFetchRequest(topic,0);
+            //var test = CreateOffsetFetchRequest(topic,1);
             //var test2 = CreateFetchRequest(topic, 0);
             ////consumer.SetOffsetPosition(new OffsetPosition(consumer.GetOffsetPosition()));
             ////Consume returns a blocking IEnumerable (ie: never ending stream)
@@ -67,9 +81,11 @@ namespace comsumer
             //var t =consumer.Consume();
             //var tt = consumer.GetOffsetPosition();
             List<OffsetPosition> tt3;
+
             var msgs = consumer.Consume();
+            
             var needHandle = from msgItem in msgs
-                where msgItem.Meta.Offset >= (OffsetKafka+1)
+                where msgItem.Meta.Offset >= (OffsetKafka+1) & msgItem.Meta.PartitionId==2//读取指定分区的消息
                 select msgItem;
             /*
             foreach (var message in consumer.Consume())
@@ -216,7 +232,7 @@ namespace comsumer
             {
                 case 0://Ctrl+C关闭 
                 case 2://按控制台关闭按钮关闭
-                    IniFileWr.IniFileSetVal("./config.ini", "topic", "test", OffsetKafka.ToString()); 
+                    //IniFileWr.IniFileSetVal("./config.ini", "topic", "test", OffsetKafka.ToString()); 
                     break;
             }
             //Console.ReadLine();
